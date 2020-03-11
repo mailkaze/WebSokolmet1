@@ -144,13 +144,26 @@ header .hamburguesa {
 
 .servicio {
     width: 25%;
-    min-height: 280px;
-    padding: 20px;
+    min-height: 550px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.servicio i {
+    font-size: 26px;
+    margin: 18px 0 10px 0;
+}
+
+.servicio h3 {
+    text-align: center;
 }
 
 .servicio p {
-    text-align: justify;
+    margin: 10px 20px;
+    font-size: 16px;
 }
 
 .servicio a {
@@ -161,9 +174,27 @@ header .hamburguesa {
     color: white;
 }
 
+.servicio .picture {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+}
+
+.servicio .picture img {
+    width: 100%;
+    object-fit: contain;
+}
+
 .servicio:nth-child(1) {
     background-color: tomato;
     border-radius: 30px 0 0 30px;
+}
+
+.servicio:nth-child(1) img{
+    border-radius: 0 0 0 30px;
 }
 
 .servicio:nth-child(2) {
@@ -177,6 +208,10 @@ header .hamburguesa {
 .servicio:nth-child(4) {
     background-color: rebeccapurple;
     border-radius: 0 30px 30px 0;
+}
+
+.servicio:nth-child(4) img{
+    border-radius: 0 0 30px 0;
 }
 
 .imagen-separador {
@@ -214,6 +249,7 @@ header .hamburguesa {
     align-items: center;
     width: 550px;
     margin: auto;
+    margin-bottom: 40px;
 }
 
 .articulo-numero {
