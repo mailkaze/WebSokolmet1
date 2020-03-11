@@ -118,24 +118,33 @@
             </div>
         </div>
     </section>
-    <section class="contacto">
-        <div class="contenedor">
-            <p>Contacta con nosotros para conseguir una cotización para tu proyecto</p>
-            <form method="submit">
-                <label for="nombre">
-                    <input type="text" placeholder="tu nombre...">
-                </label>
-                <label for="email">
-                    <input type="email" placeholder="tu e-mail...">
-                </label>
-                <label for="consulta">
-                    <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="tu consulta"></textarea>
-                </label>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-    </section>
-    <footer>
+
+    <footer class="footer">
+        <section class="contacto">
+            <div class="contenedor">
+                <p>Contacta con nosotros para conseguir una cotización para tu proyecto</p>
+                <form method="submit" class="formulario">
+                    <div class="col-1">
+                        <label for="consulta">
+                        <textarea name="consulta" id="consulta" cols="30" rows="10"
+                            placeholder="tu consulta"></textarea>
+                    </label>
+                    </div>
+                    <div class="col-2">
+                        <label for="nombre">Nombre: 
+                        <input type="text" placeholder="tu nombre...">
+                    </label>
+                    <label for="email">E-mail:
+                        <input type="email" placeholder="tu e-mail...">
+                    </label>
+                    <input type="submit" value="Enviar">
+                    </div>
+                    
+                    
+                    
+                </form>
+            </div>
+        </section>
         <div class="contenedor">
             <div class="autor">
                 <span>&copy;KazeSoft</span>
