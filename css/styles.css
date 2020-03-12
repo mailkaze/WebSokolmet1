@@ -312,10 +312,28 @@ header .hamburguesa {
 
 .formulario {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .col-2 {
     display: flex;
     flex-direction: column;
+}
+
+.social .fab {
+    font-size: 18px;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+    line-height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    color: #197FAB;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.autor i {
+    color: white;
+    font-size: 16px;
 }
