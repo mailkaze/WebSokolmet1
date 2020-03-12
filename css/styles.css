@@ -293,6 +293,8 @@ header .hamburguesa {
 
 .footer {
     background-color: #197FAB;
+    padding-top: 30px;
+    width: 100%;
 }
 
 .footer .contenedor {
@@ -303,6 +305,9 @@ header .hamburguesa {
 
 .derecha {
     width: 50%;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid white;
 }
 .contacto {
     display: flex;
@@ -331,6 +336,25 @@ header .hamburguesa {
     color: #197FAB;
     display: inline-block;
     margin-right: 5px;
+}
+
+.datos a{
+    text-decoration: none;
+    color: white;
+}
+
+.datos p{
+    margin: 0;
+}
+
+.autor {
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 0px 15px 10px;
+    border-top: 1px solid white;
+    color: white;
+    text-align: center;
+    width: 20%;
 }
 
 .autor i {
