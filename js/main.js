@@ -1,0 +1,1 @@
+AOS.init(); //inicializa las animaciones del scroll

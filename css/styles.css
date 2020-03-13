@@ -155,15 +155,22 @@ header .hamburguesa {
     flex-direction: column;
     align-items: center;
     position: relative;
+    padding-top: 20px;
+    transition: all ease-in 0.1s;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+    z-index: 1;
 }
 
 .servicio i {
     font-size: 26px;
-    margin: 18px 0 10px 0;
 }
 
 .servicio h3 {
     text-align: center;
+    padding-top: 10px;
 }
 
 .servicio p {
