@@ -303,16 +303,11 @@ header .hamburguesa {
     color: white;
 }
 
-.derecha {
-    width: 50%;
-    margin-left: 10px;
-    padding-left: 10px;
-    border-left: 1px solid white;
-}
 .contacto {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 48%;
+    padding-right: 20px;
 }
 
 .formulario {
@@ -323,6 +318,47 @@ header .hamburguesa {
 .col-2 {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
+
+}
+
+.formulario label {
+    margin-bottom: 7px;
+}
+
+.formulario input {
+    border-style: none;
+    padding: 5px;
+    border: 1px solid grey;
+}
+
+.formulario textarea {
+    border-style: none;
+    border: 1px solid grey;
+}
+
+.formulario .submit {
+    /* border-style: none; */
+    background-color: #F79D1C;
+    border-radius: 8px;
+    text-decoration: none;
+    text-shadow: none;
+    color: white;
+    margin-top: 7px;
+    padding: 8px 20px 12px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.derecha {
+    width: 48%;
+    padding-left: 20px;
+    border-left: 1px solid white;
+}
+
+.derecha p {
+    margin-bottom: 7px;
 }
 
 .social .fab {
@@ -335,7 +371,7 @@ header .hamburguesa {
     background-color: white;
     color: #197FAB;
     display: inline-block;
-    margin-right: 5px;
+    margin: 0 5px 10px 0;
 }
 
 .datos a{
@@ -344,7 +380,7 @@ header .hamburguesa {
 }
 
 .datos p{
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .autor {
