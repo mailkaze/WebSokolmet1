@@ -78,8 +78,8 @@ header .enlace a{
 header .hamburguesa {
     color: white;
     display: inline-block;
-    font-size: 40px;
-    padding-left: 10px;
+    font-size: 28px;
+    padding: 0 10px;
     display: none;
 }
 
@@ -502,7 +502,7 @@ header .hamburguesa {
     }
 }
 
-@media only screen and (max-width:786px) {
+@media only screen and (max-width:850px) {
     header .logo .nombre {
         font-size: 20px;
         padding-top: 15px;
@@ -510,6 +510,17 @@ header .hamburguesa {
 
     .articulo-numero {
         width: 100%;
+    }
+
+    
+    .autor {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .autor i {
+        margin-left: 5px;
     }
 }
 
@@ -522,12 +533,30 @@ header .hamburguesa {
         display: inline-block;
     }
 
+    .portada h1 {
+        font-size: 30px;
+    }
+
+    .portada p {
+        font-size: 20px;
+    }
+
+    .portada a {
+        font-size: 16px;
+    }
+
     .servicio {
         width: 100%;
     }
 
     .servicio .picture {
         height: 300px;
+        
+    }
+
+    .servicio img {
+        position: absolute;
+        bottom: 0;
     }
 
     .servicio:nth-child(1) {
@@ -558,6 +587,16 @@ header .hamburguesa {
         border-radius: 0 0 30px 30px;
     }
 
+    .numeros {
+        width: 80%;
+    }
+
+    .contacto {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
+
     .formulario {
         flex-direction: column;
     }
@@ -567,7 +606,12 @@ header .hamburguesa {
         align-items: center;
     }
 
+    .derecha .texto {
+        margin: 15px 0 0 0;
+    }
+
     .derecha .mapa {
         width: 100%;
     }
+
 }
