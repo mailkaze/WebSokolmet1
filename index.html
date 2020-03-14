@@ -16,16 +16,18 @@
     <header>
 
         <div class="logo">
-            <img src="img/logo-sokolmet.png" alt="Logotipo de Sokolmet">
-            <span class="nombre">Sokolmet SRL</span>
+            <a href="index.html">
+                <img src="img/logo-sokolmet.png" alt="Logotipo de Sokolmet">
+                <span class="nombre">Sokolmet SRL</span>
+            </a>
         </div>
         <nav>
             <ul class="enlaces">
-                <li class="enlace"><a href="#">inicio</a></li>
-                <li class="enlace"><a href="#">servicios</a></li>
-                <li class="enlace"><a href="#">nosotros</a></li>
-                <li class="enlace"><a href="#">contacto</a></li>
-                <li class="enlace"><a href="#">redes</a></li>
+                <li class="enlace"><a href="index.html">inicio</a></li>
+                <li class="enlace"><a href="#servicios">servicios</a></li>
+                <li class="enlace"><a href="#nosotros">nosotros</a></li>
+                <li class="enlace"><a href="#contacto">contacto</a></li>
+                <li class="enlace"><a href="#redes">redes</a></li>
             </ul>
             <a href="#" class="hamburguesa"><i class="fas fa-bars"></i></a>
         </nav>
@@ -35,7 +37,7 @@
             <div class="texto-portada">
                 <h1>Construimos tus sueños</h1>
                 <p>¿Tienes un proyecto en mente? ¡Nosotros lo hacemos realidad!</p>
-                <a href="#">Pide tu presupuesto</a>
+                <a href="mailto:sokolmet@gmail.com?Subject=Solicitud%20de%20presupuesto" target="_blank">Pide tu presupuesto</a>
             </div>
         </div>
         <div class="diagonal" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150"
@@ -44,13 +46,13 @@
                     style="stroke: none; fill: #fff;"></path>
             </svg>
     </section>
-    <section class="servicios">
+    <section class="servicios" id="servicios">
         <div class="contenedor cont-servicios">
             <article class="servicio">
                 <i class="fas fa-drafting-compass"></i>
                 <h3>Diseño</h3>
                 <p>Damos forma a tus sueños, desde el diseño arquitectónico hasta la logística del proyecto.</p>
-                <a href="#">saber más</a>
+                <a href="mailto:sokolmet@gmail.com" target="_blank">saber más</a>
                 <div class="picture">
                     <img src="img/arquitecto.jpg" alt="">
                 </div>
@@ -59,7 +61,7 @@
                 <i class="fas fa-snowplow"></i>
                 <h3>Construcción</h3>
                 <p>Ejecutamos tu proyecto, con técnicas y materiales de vanguardia.</p>
-                <a href="#">saber más</a>
+                <a href="mailto:sokolmet@gmail.com" target="_blank">saber más</a>
                 <div class="picture">
                     <img src="img/construccion.jpg" alt="">
                 </div>
@@ -69,17 +71,17 @@
                 <h3>Andamiajes y maquinaria</h3>
                 <p>¿Tienes tu propio proyecto y necesitas equipo? Alquilamos los andamios modulares más modernos del
                     mercado, así como los equipos más eficientes.</p>
-                <a href="#">saber más</a>
+                <a href="mailto:sokolmet@gmail.com" target="_blank">saber más</a>
                 <div class="picture">
                     <img src="img/andamio.jpg" alt="">
                 </div>
             </article>
             <article class="servicio">
                 <i class="fas fa-tools"></i>
-                <h3>metal-mecánica</h3>
+                <h3>Metal-mecánica</h3>
                 <p>Construcción, mantenimiento y reparación de estructuras metálicas. Resultados impecables gracias
                     a nuestro personal mejor cualificado.</p>
-                <a href="#">saber más</a>
+                <a href="mailto:sokolmet@gmail.com" target="_blank">saber más</a>
                 <div class="picture">
                     <img src="img/soldador.jpg" alt="">
                 </div>
@@ -101,7 +103,7 @@
             </svg>
         </div>
     </div>
-    <section class="nosotros">
+    <section class="nosotros" id="nosotros">
         <div class="contenedor">
             <div class="texto-nosotros">
                 <h2>Por qué confiar en nosotros</h2>
@@ -132,50 +134,54 @@
 
     <footer class="footer">
         <div class="contenedor">
-            <section class="contacto">
-                <p>Contacta con nosotros para conseguir una cotización para tu proyecto:</p>
-                <form method="submit" class="formulario">
-                    <div class="col-1">
-                        <label for="consulta">
-                            <textarea name="consulta" id="consulta" cols="30" rows="10"
-                                placeholder="tu consulta"></textarea>
-                        </label>
-                    </div>
-                    <div class="col-2">
-                        <label for="nombre">Nombre: <br>
-                            <input type="text" placeholder="tu nombre...">
-                        </label>
-                        <label for="email">E-mail: <br>
-                            <input type="email" placeholder="tu e-mail...">
-                        </label>
-                        <input class="submit" type="submit" value="Enviar">
-                    </div>
-                </form>
-            </section>
-            <div class="derecha">
-                <p>Encuéntranos en nuestras redes:</p>
-                <div class="social">
-                    <a href="https://www.facebook.com/SOKOLMET-SRL-460521384047041/"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/sokolmet"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.youtube.com/channel/UCyZr6y3LQq-FVQUrNEOlDIg"><i
-                            class="fab fa-youtube"></i></a>
+            <div class="arriba">
+                <div class="contacto" id="contacto">
+                    <p>Contacta con nosotros para conseguir una cotización para tu proyecto:</p>
+                    <form method="submit" class="formulario">
+                        <div class="col-1">
+                            <label for="consulta">
+                                <textarea name="consulta" id="consulta" cols="30" rows="10"
+                                    placeholder="tu consulta"></textarea>
+                            </label>
+                        </div>
+                        <div class="col-2">
+                            <label for="nombre">Nombre: <br>
+                                <input type="text" placeholder="tu nombre...">
+                            </label>
+                            <label for="email">E-mail: <br>
+                                <input type="email" placeholder="tu e-mail...">
+                            </label>
+                            <input class="submit" type="submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
-                <div class="datos">
-                    <p class="telefono"><a href="tel:+59122795824">(2)2795824</a></p>
-                    <p class="direccion"><a href="https://goo.gl/maps/y4N2HscH134W2rbs7">Av. Jorge Muñoz Reyes, La
-                            Paz</a></p>
+                <div class="derecha">
                     <iframe class="mapa"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.907599080445!2d-68.08164238565364!3d-16.53076184589882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2111067ce43f%3A0xa027a38aa98c9d3a!2sEmpresa%20Constructora%20%26%20Metal%20Mec%C3%A1nica%20SOKOLMET%20S.R.L.!5e0!3m2!1ses!2sbo!4v1584032628091!5m2!1ses!2sbo"
                         width="250" height="100" frameborder="0" style="border:0;" allowfullscreen=""
                         aria-hidden="false" tabindex="0"></iframe>
+                    <div class="texto">
+                        <p>Encuéntranos en nuestras redes:</p>
+                        <div class="social" id="redes">
+                            <a href="https://www.facebook.com/SOKOLMET-SRL-460521384047041/" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/sokolmet"><i class="fab fa-twitter" target="_blank"></i></a>
+                            <a href="https://www.youtube.com/channel/UCyZr6y3LQq-FVQUrNEOlDIg" target="_blank"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="datos">
+                            <p class="telefono"><a href="tel:+59122795824">(2)2795824</a></p>
+                            <p class="email"><a href="mailto:sokolmet@gmail.com" target="_blank">sokolmet@gmail.com</a></p>
+                            <p class="direccion"><a href="https://goo.gl/maps/y4N2HscH134W2rbs7">Av. Jorge Muñoz Reyes,
+                                    Calle 5, Nº 500. La Paz</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="autor">
-            <span>&copy;mailkaze</span>
-            <a href="https://github.com/mailkaze"><i class="fab fa-github"></i></a>
-        </div>
+            <div class="autor">
+                <span>&copy;mailkaze</span>
+                <a href="https://github.com/mailkaze" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
     </footer>
     <script src="https://kit.fontawesome.com/a20e852377.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
