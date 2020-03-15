@@ -39,3 +39,28 @@ window.addEventListener("resize", function(){
         }
     }
 })
+
+
+
+// Guardamos la posicion 0 del eje Y de la página al cargar
+let ubicacionPrincipal = window.pageYOffset;
+
+window.addEventListener("scroll", function(){
+    // Al hacer scroll, registramos donde está el eje Y
+    let desplazamientoActual = window.pageYOffset;
+    
+    // Si la posición actual es inferior a la registrada previamente
+    // significa que estamos subiendo.
+    if(ubicacionPrincipal >= desplazamientoActual){
+        //Mostramos el NAV
+        this.document.getElementsByTagName("header")[0].style.top = "0px"
+    // Si la posición actual es mayor que la registrada previamente
+    // significa que estamos bajando.
+    }else{
+        // Ocultamos el NAV
+        this.document.getElementsByTagName("header")[0].style.top = "-100px"
+    }
+    // Actualizamos la posición Y para compararla con la que haya 
+    //después de volver a hacer scroll.
+    ubicacionPrincipal = desplazamientoActual;
+})

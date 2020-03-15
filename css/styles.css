@@ -26,6 +26,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
+    transition: ease-in-out 0.5s;
 }
 
 header .logo {
